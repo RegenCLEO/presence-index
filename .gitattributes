@@ -1,0 +1,3 @@
+# Left out of the public snapshot (git archive). These need CLEO's private code or are local tooling.
+scan/tests/internal export-ignore
+.claude export-ignore

@@ -1,0 +1,52 @@
+# A panel: what is asked, of which engines, about which brands. PANEL.md says how to write
+# the questions and the keywords. Copy this file, fill it in, then
+# run `python -m scan freeze <file>` once, before the scan. Every stage refuses a panel
+# whose content no longer matches its hash.
+panel_id: black-friday-retailers-us-en-2026-11
+protocol: PS-1.0
+category: Black Friday retailers
+market: {country: US, language: en}
+
+# Scan days. Each question is asked runs_per_day times on each. List the reserve day
+# now: days are part of the hash, so a day cannot be added after the freeze. A day with
+# no answers costs nothing and changes no score.
+days: ["2026-11-21", "2026-11-23"]
+runs_per_day: 2
+keyword_pulls: ["2026-11-21", "2026-11-23"]   # one per calendar week; Organic Search needs two weeks
+
+selection:
+  mode: list_plus_ai            # list_plus_ai: the brand list plus up to ai_named_max the answers name
+  ai_named_max: 5               # ai_top: no list, the top ai_named_max the answers name
+
+# No engine has a default model. Name the model each engine runs.
+engines:
+  chatgpt: {model: ""}                    # OpenAI Responses API with web search. Needs OPENAI_API_KEY.
+  # chatgpt: {adapter: chatgpt_scraper}   # or chatgpt.com through DataForSEO's scraper. The app picks the model.
+  google_ai: {}                           # AI Overviews through DataForSEO. Needs DATAFORSEO_LOGIN and DATAFORSEO_PASSWORD.
+  claude: {model: "", max_searches: 4}    # Anthropic Messages API with web search. Needs ANTHROPIC_API_KEY. Drop max_searches for no cap.
+  gemini: {model: "", route: vertex}      # Google Search grounding. route vertex or developer. Needs GOOGLE_API_KEY or GEMINI_API_KEY.
+
+# The answer reader. Two different models read every answer; a third settles the brands
+# they disagree on. provider is anthropic, openai or gemini.
+reader:
+  first: {provider: "", model: ""}
+  second: {provider: "", model: ""}
+  tiebreak: {provider: "", model: ""}
+
+questions:
+  - {id: q01, text: "where is the best place to buy a tv on black friday", stratum: general}
+  - {id: q02, text: "which stores have the best black friday laptop deals", stratum: electronics}
+  - {id: q03, text: "best black friday deals on kitchen appliances", stratum: home}
+
+keywords:                       # unbranded; volume is monthly searches, 0 when unknown. `python -m scan volumes` fills this block.
+  - {text: "black friday tv deals", volume: 0}
+  - {text: "black friday laptop deals", volume: 0}
+  - {text: "black friday appliance deals", volume: 0}
+
+brands:                         # from the named outside list, in its order
+  - id: example-retailer
+    name: Example Retailer
+    domain: example.com
+    other_domains: []
+    aliases: ["Example"]
+    ignore: ["for example"]     # phrases that contain a name but are not the brand

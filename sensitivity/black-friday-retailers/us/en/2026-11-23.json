@@ -1,0 +1,1886 @@
+{
+ "category": "Black Friday retailers",
+ "cpi_version": "1.0.0",
+ "factors": [
+  0.75,
+  1.25
+ ],
+ "market": {
+  "country": "US",
+  "language": "en"
+ },
+ "panel_id": "black-friday-retailers-us-en-2026-11",
+ "panel_sha256": "65c693fb9482a751ec03c683cd85abf080967bc7b3c1a87545849371e462a0ec",
+ "ranked_brands": 14,
+ "scores_sha256": "a4f0c0b7370b7fa41adbe45996afcae166927bc03e0f7393e46892d0fba3354b",
+ "sensitivity_sha256": "004a92c534f467edbcccca82de2356ca93809badaa46ed91f38c7803f4ca935e",
+ "summary": {
+  "largest_index_change": 2.46,
+  "tests": 20,
+  "tests_changing_any_rank": 3,
+  "tests_changing_leaders": 1,
+  "tests_changing_public_rows": 2
+ },
+ "tests": [
+  {
+   "factor": 0.75,
+   "largest_index_change": 2.42,
+   "leaders_changed": false,
+   "order_changed": true,
+   "ranks_changed": 0,
+   "rows": [
+    {
+     "index": 87.3,
+     "index_change": -0.46,
+     "name": "Walmart",
+     "rank_label": "1=",
+     "tested_index": 86.8,
+     "tested_rank_label": "1="
+    },
+    {
+     "index": 80.9,
+     "index_change": -0.83,
+     "name": "Best Buy",
+     "rank_label": "1=",
+     "tested_index": 80.0,
+     "tested_rank_label": "1="
+    },
+    {
+     "index": 75.9,
+     "index_change": -1.15,
+     "name": "Amazon",
+     "rank_label": "1=",
+     "tested_index": 74.7,
+     "tested_rank_label": "1="
+    },
+    {
+     "index": 71.5,
+     "index_change": -1.02,
+     "name": "Target",
+     "rank_label": "4",
+     "tested_index": 70.4,
+     "tested_rank_label": "4"
+    },
+    {
+     "index": 63.4,
+     "index_change": -0.15,
+     "name": "Costco",
+     "rank_label": "5=",
+     "tested_index": 63.3,
+     "tested_rank_label": "5="
+    },
+    {
+     "index": 60.9,
+     "index_change": 0.61,
+     "name": "Home Depot",
+     "rank_label": "5=",
+     "tested_index": 61.5,
+     "tested_rank_label": "5="
+    },
+    {
+     "index": 51.7,
+     "index_change": 1.95,
+     "name": "Ashley Furniture",
+     "rank_label": "7=",
+     "tested_index": 53.6,
+     "tested_rank_label": "7="
+    },
+    {
+     "index": 49.5,
+     "index_change": 1.53,
+     "name": "Old Navy",
+     "rank_label": "7=",
+     "tested_index": 51.1,
+     "tested_rank_label": "7="
+    },
+    {
+     "index": 47.1,
+     "index_change": 2.21,
+     "name": "GameStop",
+     "rank_label": "7=",
+     "tested_index": 49.3,
+     "tested_rank_label": "7="
+    },
+    {
+     "index": 44.2,
+     "index_change": 2.42,
+     "name": "IKEA",
+     "rank_label": "10=",
+     "tested_index": 46.6,
+     "tested_rank_label": "10="
+    }
+   ],
+   "signal": "rec.ai_recommendation",
+   "tested_weight": 18.0,
+   "unpublished_brands_entering_public_rows": 0,
+   "weight": 24
+  },
+  {
+   "factor": 1.25,
+   "largest_index_change": 2.14,
+   "leaders_changed": false,
+   "order_changed": true,
+   "ranks_changed": 5,
+   "rows": [
+    {
+     "index": 87.3,
+     "index_change": 0.4,
+     "name": "Walmart",
+     "rank_label": "1=",
+     "tested_index": 87.7,
+     "tested_rank_label": "1="
+    },
+    {
+     "index": 80.9,
+     "index_change": 0.74,
+     "name": "Best Buy",
+     "rank_label": "1=",
+     "tested_index": 81.6,
+     "tested_rank_label": "1="
+    },
+    {
+     "index": 75.9,
+     "index_change": 1.01,
+     "name": "Amazon",
+     "rank_label": "1=",
+     "tested_index": 76.9,
+     "tested_rank_label": "1="
+    },
+    {
+     "index": 71.5,
+     "index_change": 0.91,
+     "name": "Target",
+     "rank_label": "4",
+     "tested_index": 72.4,
+     "tested_rank_label": "4"
+    },
+    {
+     "index": 63.4,
+     "index_change": 0.13,
+     "name": "Costco",
+     "rank_label": "5=",
+     "tested_index": 63.6,
+     "tested_rank_label": "5="
+    },
+    {
+     "index": 60.9,
+     "index_change": -0.54,
+     "name": "Home Depot",
+     "rank_label": "5=",
+     "tested_index": 60.3,
+     "tested_rank_label": "5="
+    },
+    {
+     "index": 51.7,
+     "index_change": -1.73,
+     "name": "Ashley Furniture",
+     "rank_label": "7=",
+     "tested_index": 50.0,
+     "tested_rank_label": "7="
+    },
+    {
+     "index": 49.5,
+     "index_change": -1.36,
+     "name": "Old Navy",
+     "rank_label": "7=",
+     "tested_index": 48.2,
+     "tested_rank_label": "7="
+    },
+    {
+     "index": 47.1,
+     "index_change": -1.96,
+     "name": "GameStop",
+     "rank_label": "7=",
+     "tested_index": 45.1,
+     "tested_rank_label": "7="
+    },
+    {
+     "index": 44.2,
+     "index_change": -2.14,
+     "name": "IKEA",
+     "rank_label": "10=",
+     "tested_index": 42.0,
+     "tested_rank_label": "11="
+    }
+   ],
+   "signal": "rec.ai_recommendation",
+   "tested_weight": 30.0,
+   "unpublished_brands_entering_public_rows": 1,
+   "weight": 24
+  },
+  {
+   "factor": 0.75,
+   "largest_index_change": 2.46,
+   "leaders_changed": true,
+   "order_changed": false,
+   "ranks_changed": 2,
+   "rows": [
+    {
+     "index": 87.3,
+     "index_change": -0.01,
+     "name": "Walmart",
+     "rank_label": "1=",
+     "tested_index": 87.2,
+     "tested_rank_label": "1="
+    },
+    {
+     "index": 80.9,
+     "index_change": 0.92,
+     "name": "Best Buy",
+     "rank_label": "1=",
+     "tested_index": 81.8,
+     "tested_rank_label": "1="
+    },
+    {
+     "index": 75.9,
+     "index_change": 0.12,
+     "name": "Amazon",
+     "rank_label": "1=",
+     "tested_index": 76.0,
+     "tested_rank_label": "3="
+    },
+    {
+     "index": 71.5,
+     "index_change": 2.46,
+     "name": "Target",
+     "rank_label": "4",
+     "tested_index": 73.9,
+     "tested_rank_label": "3="
+    },
+    {
+     "index": 63.4,
+     "index_change": 1.85,
+     "name": "Costco",
+     "rank_label": "5=",
+     "tested_index": 65.3,
+     "tested_rank_label": "5="
+    },
+    {
+     "index": 60.9,
+     "index_change": 2.16,
+     "name": "Home Depot",
+     "rank_label": "5=",
+     "tested_index": 63.0,
+     "tested_rank_label": "5="
+    },
+    {
+     "index": 51.7,
+     "index_change": 1.62,
+     "name": "Ashley Furniture",
+     "rank_label": "7=",
+     "tested_index": 53.3,
+     "tested_rank_label": "7="
+    },
+    {
+     "index": 49.5,
+     "index_change": 1.8,
+     "name": "Old Navy",
+     "rank_label": "7=",
+     "tested_index": 51.3,
+     "tested_rank_label": "7="
+    },
+    {
+     "index": 47.1,
+     "index_change": 1.69,
+     "name": "GameStop",
+     "rank_label": "7=",
+     "tested_index": 48.8,
+     "tested_rank_label": "7="
+    },
+    {
+     "index": 44.2,
+     "index_change": 1.6,
+     "name": "IKEA",
+     "rank_label": "10=",
+     "tested_index": 45.8,
+     "tested_rank_label": "10="
+    }
+   ],
+   "signal": "rec.organic_search",
+   "tested_weight": 10.5,
+   "unpublished_brands_entering_public_rows": 0,
+   "weight": 14
+  },
+  {
+   "factor": 1.25,
+   "largest_index_change": 2.3,
+   "leaders_changed": false,
+   "order_changed": false,
+   "ranks_changed": 0,
+   "rows": [
+    {
+     "index": 87.3,
+     "index_change": 0.01,
+     "name": "Walmart",
+     "rank_label": "1=",
+     "tested_index": 87.3,
+     "tested_rank_label": "1="
+    },
+    {
+     "index": 80.9,
+     "index_change": -0.85,
+     "name": "Best Buy",
+     "rank_label": "1=",
+     "tested_index": 80.0,
+     "tested_rank_label": "1="
+    },
+    {
+     "index": 75.9,
+     "index_change": -0.11,
+     "name": "Amazon",
+     "rank_label": "1=",
+     "tested_index": 75.8,
+     "tested_rank_label": "1="
+    },
+    {
+     "index": 71.5,
+     "index_change": -2.3,
+     "name": "Target",
+     "rank_label": "4",
+     "tested_index": 69.2,
+     "tested_rank_label": "4"
+    },
+    {
+     "index": 63.4,
+     "index_change": -1.72,
+     "name": "Costco",
+     "rank_label": "5=",
+     "tested_index": 61.7,
+     "tested_rank_label": "5="
+    },
+    {
+     "index": 60.9,
+     "index_change": -2.01,
+     "name": "Home Depot",
+     "rank_label": "5=",
+     "tested_index": 58.9,
+     "tested_rank_label": "5="
+    },
+    {
+     "index": 51.7,
+     "index_change": -1.51,
+     "name": "Ashley Furniture",
+     "rank_label": "7=",
+     "tested_index": 50.2,
+     "tested_rank_label": "7="
+    },
+    {
+     "index": 49.5,
+     "index_change": -1.67,
+     "name": "Old Navy",
+     "rank_label": "7=",
+     "tested_index": 47.8,
+     "tested_rank_label": "7="
+    },
+    {
+     "index": 47.1,
+     "index_change": -1.58,
+     "name": "GameStop",
+     "rank_label": "7=",
+     "tested_index": 45.5,
+     "tested_rank_label": "7="
+    },
+    {
+     "index": 44.2,
+     "index_change": -1.49,
+     "name": "IKEA",
+     "rank_label": "10=",
+     "tested_index": 42.7,
+     "tested_rank_label": "10="
+    }
+   ],
+   "signal": "rec.organic_search",
+   "tested_weight": 17.5,
+   "unpublished_brands_entering_public_rows": 0,
+   "weight": 14
+  },
+  {
+   "factor": 0.75,
+   "largest_index_change": 1.46,
+   "leaders_changed": false,
+   "order_changed": false,
+   "ranks_changed": 0,
+   "rows": [
+    {
+     "index": 87.3,
+     "index_change": 1.46,
+     "name": "Walmart",
+     "rank_label": "1=",
+     "tested_index": 88.7,
+     "tested_rank_label": "1="
+    },
+    {
+     "index": 80.9,
+     "index_change": 1.26,
+     "name": "Best Buy",
+     "rank_label": "1=",
+     "tested_index": 82.1,
+     "tested_rank_label": "1="
+    },
+    {
+     "index": 75.9,
+     "index_change": 1.16,
+     "name": "Amazon",
+     "rank_label": "1=",
+     "tested_index": 77.0,
+     "tested_rank_label": "1="
+    },
+    {
+     "index": 71.5,
+     "index_change": 0.98,
+     "name": "Target",
+     "rank_label": "4",
+     "tested_index": 72.4,
+     "tested_rank_label": "4"
+    },
+    {
+     "index": 63.4,
+     "index_change": 0.73,
+     "name": "Costco",
+     "rank_label": "5=",
+     "tested_index": 64.2,
+     "tested_rank_label": "5="
+    },
+    {
+     "index": 60.9,
+     "index_change": 0.65,
+     "name": "Home Depot",
+     "rank_label": "5=",
+     "tested_index": 61.5,
+     "tested_rank_label": "5="
+    },
+    {
+     "index": 51.7,
+     "index_change": 0.39,
+     "name": "Ashley Furniture",
+     "rank_label": "7=",
+     "tested_index": 52.1,
+     "tested_rank_label": "7="
+    },
+    {
+     "index": 49.5,
+     "index_change": 0.8,
+     "name": "Old Navy",
+     "rank_label": "7=",
+     "tested_index": 50.3,
+     "tested_rank_label": "7="
+    },
+    {
+     "index": 47.1,
+     "index_change": 0.23,
+     "name": "GameStop",
+     "rank_label": "7=",
+     "tested_index": 47.3,
+     "tested_rank_label": "7="
+    },
+    {
+     "index": 44.2,
+     "index_change": 0.13,
+     "name": "IKEA",
+     "rank_label": "10=",
+     "tested_index": 44.3,
+     "tested_rank_label": "10="
+    }
+   ],
+   "signal": "rec.reviews",
+   "tested_weight": 9.0,
+   "unpublished_brands_entering_public_rows": 0,
+   "weight": 12
+  },
+  {
+   "factor": 1.25,
+   "largest_index_change": 1.38,
+   "leaders_changed": false,
+   "order_changed": false,
+   "ranks_changed": 0,
+   "rows": [
+    {
+     "index": 87.3,
+     "index_change": -1.38,
+     "name": "Walmart",
+     "rank_label": "1=",
+     "tested_index": 85.9,
+     "tested_rank_label": "1="
+    },
+    {
+     "index": 80.9,
+     "index_change": -1.19,
+     "name": "Best Buy",
+     "rank_label": "1=",
+     "tested_index": 79.7,
+     "tested_rank_label": "1="
+    },
+    {
+     "index": 75.9,
+     "index_change": -1.09,
+     "name": "Amazon",
+     "rank_label": "1=",
+     "tested_index": 74.8,
+     "tested_rank_label": "1="
+    },
+    {
+     "index": 71.5,
+     "index_change": -0.92,
+     "name": "Target",
+     "rank_label": "4",
+     "tested_index": 70.5,
+     "tested_rank_label": "4"
+    },
+    {
+     "index": 63.4,
+     "index_change": -0.69,
+     "name": "Costco",
+     "rank_label": "5=",
+     "tested_index": 62.8,
+     "tested_rank_label": "5="
+    },
+    {
+     "index": 60.9,
+     "index_change": -0.61,
+     "name": "Home Depot",
+     "rank_label": "5=",
+     "tested_index": 60.3,
+     "tested_rank_label": "5="
+    },
+    {
+     "index": 51.7,
+     "index_change": -0.36,
+     "name": "Ashley Furniture",
+     "rank_label": "7=",
+     "tested_index": 51.3,
+     "tested_rank_label": "7="
+    },
+    {
+     "index": 49.5,
+     "index_change": -0.75,
+     "name": "Old Navy",
+     "rank_label": "7=",
+     "tested_index": 48.8,
+     "tested_rank_label": "7="
+    },
+    {
+     "index": 47.1,
+     "index_change": -0.21,
+     "name": "GameStop",
+     "rank_label": "7=",
+     "tested_index": 46.9,
+     "tested_rank_label": "7="
+    },
+    {
+     "index": 44.2,
+     "index_change": -0.12,
+     "name": "IKEA",
+     "rank_label": "10=",
+     "tested_index": 44.1,
+     "tested_rank_label": "10="
+    }
+   ],
+   "signal": "rec.reviews",
+   "tested_weight": 15.0,
+   "unpublished_brands_entering_public_rows": 0,
+   "weight": 12
+  },
+  {
+   "factor": 0.75,
+   "largest_index_change": 0.98,
+   "leaders_changed": false,
+   "order_changed": false,
+   "ranks_changed": 0,
+   "rows": [
+    {
+     "index": 87.3,
+     "index_change": -0.18,
+     "name": "Walmart",
+     "rank_label": "1=",
+     "tested_index": 87.1,
+     "tested_rank_label": "1="
+    },
+    {
+     "index": 80.9,
+     "index_change": -0.38,
+     "name": "Best Buy",
+     "rank_label": "1=",
+     "tested_index": 80.5,
+     "tested_rank_label": "1="
+    },
+    {
+     "index": 75.9,
+     "index_change": -0.3,
+     "name": "Amazon",
+     "rank_label": "1=",
+     "tested_index": 75.6,
+     "tested_rank_label": "1="
+    },
+    {
+     "index": 71.5,
+     "index_change": -0.39,
+     "name": "Target",
+     "rank_label": "4",
+     "tested_index": 71.1,
+     "tested_rank_label": "4"
+    },
+    {
+     "index": 63.4,
+     "index_change": -0.21,
+     "name": "Costco",
+     "rank_label": "5=",
+     "tested_index": 63.2,
+     "tested_rank_label": "5="
+    },
+    {
+     "index": 60.9,
+     "index_change": -0.21,
+     "name": "Home Depot",
+     "rank_label": "5=",
+     "tested_index": 60.7,
+     "tested_rank_label": "5="
+    },
+    {
+     "index": 51.7,
+     "index_change": -0.21,
+     "name": "Ashley Furniture",
+     "rank_label": "7=",
+     "tested_index": 51.5,
+     "tested_rank_label": "7="
+    },
+    {
+     "index": 49.5,
+     "index_change": 0.38,
+     "name": "Old Navy",
+     "rank_label": "7=",
+     "tested_index": 49.9,
+     "tested_rank_label": "7="
+    },
+    {
+     "index": 47.1,
+     "index_change": 0.33,
+     "name": "GameStop",
+     "rank_label": "7=",
+     "tested_index": 47.4,
+     "tested_rank_label": "7="
+    },
+    {
+     "index": 44.2,
+     "index_change": 0.98,
+     "name": "IKEA",
+     "rank_label": "10=",
+     "tested_index": 45.2,
+     "tested_rank_label": "10="
+    }
+   ],
+   "signal": "rec.ai_citation",
+   "tested_weight": 7.5,
+   "unpublished_brands_entering_public_rows": 0,
+   "weight": 10
+  },
+  {
+   "factor": 1.25,
+   "largest_index_change": 0.93,
+   "leaders_changed": false,
+   "order_changed": false,
+   "ranks_changed": 0,
+   "rows": [
+    {
+     "index": 87.3,
+     "index_change": 0.17,
+     "name": "Walmart",
+     "rank_label": "1=",
+     "tested_index": 87.4,
+     "tested_rank_label": "1="
+    },
+    {
+     "index": 80.9,
+     "index_change": 0.36,
+     "name": "Best Buy",
+     "rank_label": "1=",
+     "tested_index": 81.2,
+     "tested_rank_label": "1="
+    },
+    {
+     "index": 75.9,
+     "index_change": 0.29,
+     "name": "Amazon",
+     "rank_label": "1=",
+     "tested_index": 76.2,
+     "tested_rank_label": "1="
+    },
+    {
+     "index": 71.5,
+     "index_change": 0.37,
+     "name": "Target",
+     "rank_label": "4",
+     "tested_index": 71.8,
+     "tested_rank_label": "4"
+    },
+    {
+     "index": 63.4,
+     "index_change": 0.2,
+     "name": "Costco",
+     "rank_label": "5=",
+     "tested_index": 63.6,
+     "tested_rank_label": "5="
+    },
+    {
+     "index": 60.9,
+     "index_change": 0.2,
+     "name": "Home Depot",
+     "rank_label": "5=",
+     "tested_index": 61.1,
+     "tested_rank_label": "5="
+    },
+    {
+     "index": 51.7,
+     "index_change": 0.2,
+     "name": "Ashley Furniture",
+     "rank_label": "7=",
+     "tested_index": 51.9,
+     "tested_rank_label": "7="
+    },
+    {
+     "index": 49.5,
+     "index_change": -0.36,
+     "name": "Old Navy",
+     "rank_label": "7=",
+     "tested_index": 49.2,
+     "tested_rank_label": "7="
+    },
+    {
+     "index": 47.1,
+     "index_change": -0.31,
+     "name": "GameStop",
+     "rank_label": "7=",
+     "tested_index": 46.8,
+     "tested_rank_label": "7="
+    },
+    {
+     "index": 44.2,
+     "index_change": -0.93,
+     "name": "IKEA",
+     "rank_label": "10=",
+     "tested_index": 43.3,
+     "tested_rank_label": "10="
+    }
+   ],
+   "signal": "rec.ai_citation",
+   "tested_weight": 12.5,
+   "unpublished_brands_entering_public_rows": 0,
+   "weight": 10
+  },
+  {
+   "factor": 0.75,
+   "largest_index_change": 1.01,
+   "leaders_changed": false,
+   "order_changed": true,
+   "ranks_changed": 5,
+   "rows": [
+    {
+     "index": 87.3,
+     "index_change": -0.23,
+     "name": "Walmart",
+     "rank_label": "1=",
+     "tested_index": 87.0,
+     "tested_rank_label": "1="
+    },
+    {
+     "index": 80.9,
+     "index_change": -0.37,
+     "name": "Best Buy",
+     "rank_label": "1=",
+     "tested_index": 80.5,
+     "tested_rank_label": "1="
+    },
+    {
+     "index": 75.9,
+     "index_change": -0.56,
+     "name": "Amazon",
+     "rank_label": "1=",
+     "tested_index": 75.3,
+     "tested_rank_label": "1="
+    },
+    {
+     "index": 71.5,
+     "index_change": -0.4,
+     "name": "Target",
+     "rank_label": "4",
+     "tested_index": 71.0,
+     "tested_rank_label": "4"
+    },
+    {
+     "index": 63.4,
+     "index_change": -0.71,
+     "name": "Costco",
+     "rank_label": "5=",
+     "tested_index": 62.7,
+     "tested_rank_label": "5="
+    },
+    {
+     "index": 60.9,
+     "index_change": -0.75,
+     "name": "Home Depot",
+     "rank_label": "5=",
+     "tested_index": 60.1,
+     "tested_rank_label": "5="
+    },
+    {
+     "index": 51.7,
+     "index_change": -0.93,
+     "name": "Ashley Furniture",
+     "rank_label": "7=",
+     "tested_index": 50.8,
+     "tested_rank_label": "7="
+    },
+    {
+     "index": 49.5,
+     "index_change": -0.73,
+     "name": "Old Navy",
+     "rank_label": "7=",
+     "tested_index": 48.8,
+     "tested_rank_label": "7="
+    },
+    {
+     "index": 47.1,
+     "index_change": -0.83,
+     "name": "GameStop",
+     "rank_label": "7=",
+     "tested_index": 46.3,
+     "tested_rank_label": "7="
+    },
+    {
+     "index": 44.2,
+     "index_change": -0.92,
+     "name": "IKEA",
+     "rank_label": "10=",
+     "tested_index": 43.3,
+     "tested_rank_label": "11="
+    }
+   ],
+   "signal": "rec.independent_mentions",
+   "tested_weight": 7.5,
+   "unpublished_brands_entering_public_rows": 1,
+   "weight": 10
+  },
+  {
+   "factor": 1.25,
+   "largest_index_change": 0.96,
+   "leaders_changed": false,
+   "order_changed": true,
+   "ranks_changed": 0,
+   "rows": [
+    {
+     "index": 87.3,
+     "index_change": 0.22,
+     "name": "Walmart",
+     "rank_label": "1=",
+     "tested_index": 87.5,
+     "tested_rank_label": "1="
+    },
+    {
+     "index": 80.9,
+     "index_change": 0.35,
+     "name": "Best Buy",
+     "rank_label": "1=",
+     "tested_index": 81.2,
+     "tested_rank_label": "1="
+    },
+    {
+     "index": 75.9,
+     "index_change": 0.53,
+     "name": "Amazon",
+     "rank_label": "1=",
+     "tested_index": 76.4,
+     "tested_rank_label": "1="
+    },
+    {
+     "index": 71.5,
+     "index_change": 0.38,
+     "name": "Target",
+     "rank_label": "4",
+     "tested_index": 71.8,
+     "tested_rank_label": "4"
+    },
+    {
+     "index": 63.4,
+     "index_change": 0.68,
+     "name": "Costco",
+     "rank_label": "5=",
+     "tested_index": 64.1,
+     "tested_rank_label": "5="
+    },
+    {
+     "index": 60.9,
+     "index_change": 0.71,
+     "name": "Home Depot",
+     "rank_label": "5=",
+     "tested_index": 61.6,
+     "tested_rank_label": "5="
+    },
+    {
+     "index": 51.7,
+     "index_change": 0.88,
+     "name": "Ashley Furniture",
+     "rank_label": "7=",
+     "tested_index": 52.6,
+     "tested_rank_label": "7="
+    },
+    {
+     "index": 49.5,
+     "index_change": 0.69,
+     "name": "Old Navy",
+     "rank_label": "7=",
+     "tested_index": 50.2,
+     "tested_rank_label": "7="
+    },
+    {
+     "index": 47.1,
+     "index_change": 0.79,
+     "name": "GameStop",
+     "rank_label": "7=",
+     "tested_index": 47.9,
+     "tested_rank_label": "7="
+    },
+    {
+     "index": 44.2,
+     "index_change": 0.87,
+     "name": "IKEA",
+     "rank_label": "10=",
+     "tested_index": 45.1,
+     "tested_rank_label": "10="
+    }
+   ],
+   "signal": "rec.independent_mentions",
+   "tested_weight": 12.5,
+   "unpublished_brands_entering_public_rows": 0,
+   "weight": 10
+  },
+  {
+   "factor": 0.75,
+   "largest_index_change": 1.36,
+   "leaders_changed": false,
+   "order_changed": false,
+   "ranks_changed": 0,
+   "rows": [
+    {
+     "index": 87.3,
+     "index_change": -0.29,
+     "name": "Walmart",
+     "rank_label": "1=",
+     "tested_index": 87.0,
+     "tested_rank_label": "1="
+    },
+    {
+     "index": 80.9,
+     "index_change": -0.44,
+     "name": "Best Buy",
+     "rank_label": "1=",
+     "tested_index": 80.4,
+     "tested_rank_label": "1="
+    },
+    {
+     "index": 75.9,
+     "index_change": 0.55,
+     "name": "Amazon",
+     "rank_label": "1=",
+     "tested_index": 76.4,
+     "tested_rank_label": "1="
+    },
+    {
+     "index": 71.5,
+     "index_change": -0.39,
+     "name": "Target",
+     "rank_label": "4",
+     "tested_index": 71.1,
+     "tested_rank_label": "4"
+    },
+    {
+     "index": 63.4,
+     "index_change": -0.77,
+     "name": "Costco",
+     "rank_label": "5=",
+     "tested_index": 62.7,
+     "tested_rank_label": "5="
+    },
+    {
+     "index": 60.9,
+     "index_change": -0.71,
+     "name": "Home Depot",
+     "rank_label": "5=",
+     "tested_index": 60.2,
+     "tested_rank_label": "5="
+    },
+    {
+     "index": 51.7,
+     "index_change": -1.07,
+     "name": "Ashley Furniture",
+     "rank_label": "7=",
+     "tested_index": 50.6,
+     "tested_rank_label": "7="
+    },
+    {
+     "index": 49.5,
+     "index_change": -1.16,
+     "name": "Old Navy",
+     "rank_label": "7=",
+     "tested_index": 48.4,
+     "tested_rank_label": "7="
+    },
+    {
+     "index": 47.1,
+     "index_change": -0.93,
+     "name": "GameStop",
+     "rank_label": "7=",
+     "tested_index": 46.1,
+     "tested_rank_label": "7="
+    },
+    {
+     "index": 44.2,
+     "index_change": -1.28,
+     "name": "IKEA",
+     "rank_label": "10=",
+     "tested_index": 42.9,
+     "tested_rank_label": "10="
+    }
+   ],
+   "signal": "rdy.crawl_access",
+   "tested_weight": 6.75,
+   "unpublished_brands_entering_public_rows": 0,
+   "weight": 9
+  },
+  {
+   "factor": 1.25,
+   "largest_index_change": 1.3,
+   "leaders_changed": false,
+   "order_changed": true,
+   "ranks_changed": 0,
+   "rows": [
+    {
+     "index": 87.3,
+     "index_change": 0.28,
+     "name": "Walmart",
+     "rank_label": "1=",
+     "tested_index": 87.5,
+     "tested_rank_label": "1="
+    },
+    {
+     "index": 80.9,
+     "index_change": 0.42,
+     "name": "Best Buy",
+     "rank_label": "1=",
+     "tested_index": 81.3,
+     "tested_rank_label": "1="
+    },
+    {
+     "index": 75.9,
+     "index_change": -0.52,
+     "name": "Amazon",
+     "rank_label": "1=",
+     "tested_index": 75.3,
+     "tested_rank_label": "1="
+    },
+    {
+     "index": 71.5,
+     "index_change": 0.37,
+     "name": "Target",
+     "rank_label": "4",
+     "tested_index": 71.8,
+     "tested_rank_label": "4"
+    },
+    {
+     "index": 63.4,
+     "index_change": 0.73,
+     "name": "Costco",
+     "rank_label": "5=",
+     "tested_index": 64.2,
+     "tested_rank_label": "5="
+    },
+    {
+     "index": 60.9,
+     "index_change": 0.68,
+     "name": "Home Depot",
+     "rank_label": "5=",
+     "tested_index": 61.6,
+     "tested_rank_label": "5="
+    },
+    {
+     "index": 51.7,
+     "index_change": 1.02,
+     "name": "Ashley Furniture",
+     "rank_label": "7=",
+     "tested_index": 52.7,
+     "tested_rank_label": "7="
+    },
+    {
+     "index": 49.5,
+     "index_change": 1.11,
+     "name": "Old Navy",
+     "rank_label": "7=",
+     "tested_index": 50.6,
+     "tested_rank_label": "7="
+    },
+    {
+     "index": 47.1,
+     "index_change": 0.89,
+     "name": "GameStop",
+     "rank_label": "7=",
+     "tested_index": 48.0,
+     "tested_rank_label": "7="
+    },
+    {
+     "index": 44.2,
+     "index_change": 1.23,
+     "name": "IKEA",
+     "rank_label": "10=",
+     "tested_index": 45.4,
+     "tested_rank_label": "10="
+    }
+   ],
+   "signal": "rdy.crawl_access",
+   "tested_weight": 11.25,
+   "unpublished_brands_entering_public_rows": 0,
+   "weight": 9
+  },
+  {
+   "factor": 0.75,
+   "largest_index_change": 1.28,
+   "leaders_changed": false,
+   "order_changed": false,
+   "ranks_changed": 0,
+   "rows": [
+    {
+     "index": 87.3,
+     "index_change": -0.18,
+     "name": "Walmart",
+     "rank_label": "1=",
+     "tested_index": 87.1,
+     "tested_rank_label": "1="
+    },
+    {
+     "index": 80.9,
+     "index_change": -0.1,
+     "name": "Best Buy",
+     "rank_label": "1=",
+     "tested_index": 80.8,
+     "tested_rank_label": "1="
+    },
+    {
+     "index": 75.9,
+     "index_change": -0.27,
+     "name": "Amazon",
+     "rank_label": "1=",
+     "tested_index": 75.6,
+     "tested_rank_label": "1="
+    },
+    {
+     "index": 71.5,
+     "index_change": -0.66,
+     "name": "Target",
+     "rank_label": "4",
+     "tested_index": 70.8,
+     "tested_rank_label": "4"
+    },
+    {
+     "index": 63.4,
+     "index_change": -0.84,
+     "name": "Costco",
+     "rank_label": "5=",
+     "tested_index": 62.6,
+     "tested_rank_label": "5="
+    },
+    {
+     "index": 60.9,
+     "index_change": -0.72,
+     "name": "Home Depot",
+     "rank_label": "5=",
+     "tested_index": 60.2,
+     "tested_rank_label": "5="
+    },
+    {
+     "index": 51.7,
+     "index_change": -0.9,
+     "name": "Ashley Furniture",
+     "rank_label": "7=",
+     "tested_index": 50.8,
+     "tested_rank_label": "7="
+    },
+    {
+     "index": 49.5,
+     "index_change": -0.98,
+     "name": "Old Navy",
+     "rank_label": "7=",
+     "tested_index": 48.5,
+     "tested_rank_label": "7="
+    },
+    {
+     "index": 47.1,
+     "index_change": -1.01,
+     "name": "GameStop",
+     "rank_label": "7=",
+     "tested_index": 46.1,
+     "tested_rank_label": "7="
+    },
+    {
+     "index": 44.2,
+     "index_change": -1.28,
+     "name": "IKEA",
+     "rank_label": "10=",
+     "tested_index": 42.9,
+     "tested_rank_label": "10="
+    }
+   ],
+   "signal": "rdy.site_seo",
+   "tested_weight": 6.75,
+   "unpublished_brands_entering_public_rows": 0,
+   "weight": 9
+  },
+  {
+   "factor": 1.25,
+   "largest_index_change": 1.23,
+   "leaders_changed": false,
+   "order_changed": false,
+   "ranks_changed": 0,
+   "rows": [
+    {
+     "index": 87.3,
+     "index_change": 0.17,
+     "name": "Walmart",
+     "rank_label": "1=",
+     "tested_index": 87.4,
+     "tested_rank_label": "1="
+    },
+    {
+     "index": 80.9,
+     "index_change": 0.09,
+     "name": "Best Buy",
+     "rank_label": "1=",
+     "tested_index": 81.0,
+     "tested_rank_label": "1="
+    },
+    {
+     "index": 75.9,
+     "index_change": 0.25,
+     "name": "Amazon",
+     "rank_label": "1=",
+     "tested_index": 76.1,
+     "tested_rank_label": "1="
+    },
+    {
+     "index": 71.5,
+     "index_change": 0.63,
+     "name": "Target",
+     "rank_label": "4",
+     "tested_index": 72.1,
+     "tested_rank_label": "4"
+    },
+    {
+     "index": 63.4,
+     "index_change": 0.8,
+     "name": "Costco",
+     "rank_label": "5=",
+     "tested_index": 64.2,
+     "tested_rank_label": "5="
+    },
+    {
+     "index": 60.9,
+     "index_change": 0.68,
+     "name": "Home Depot",
+     "rank_label": "5=",
+     "tested_index": 61.6,
+     "tested_rank_label": "5="
+    },
+    {
+     "index": 51.7,
+     "index_change": 0.86,
+     "name": "Ashley Furniture",
+     "rank_label": "7=",
+     "tested_index": 52.6,
+     "tested_rank_label": "7="
+    },
+    {
+     "index": 49.5,
+     "index_change": 0.93,
+     "name": "Old Navy",
+     "rank_label": "7=",
+     "tested_index": 50.5,
+     "tested_rank_label": "7="
+    },
+    {
+     "index": 47.1,
+     "index_change": 0.97,
+     "name": "GameStop",
+     "rank_label": "7=",
+     "tested_index": 48.0,
+     "tested_rank_label": "7="
+    },
+    {
+     "index": 44.2,
+     "index_change": 1.23,
+     "name": "IKEA",
+     "rank_label": "10=",
+     "tested_index": 45.4,
+     "tested_rank_label": "10="
+    }
+   ],
+   "signal": "rdy.site_seo",
+   "tested_weight": 11.25,
+   "unpublished_brands_entering_public_rows": 0,
+   "weight": 9
+  },
+  {
+   "factor": 0.75,
+   "largest_index_change": 0.86,
+   "leaders_changed": false,
+   "order_changed": false,
+   "ranks_changed": 0,
+   "rows": [
+    {
+     "index": 87.3,
+     "index_change": -0.19,
+     "name": "Walmart",
+     "rank_label": "1=",
+     "tested_index": 87.1,
+     "tested_rank_label": "1="
+    },
+    {
+     "index": 80.9,
+     "index_change": -0.29,
+     "name": "Best Buy",
+     "rank_label": "1=",
+     "tested_index": 80.6,
+     "tested_rank_label": "1="
+    },
+    {
+     "index": 75.9,
+     "index_change": 0.01,
+     "name": "Amazon",
+     "rank_label": "1=",
+     "tested_index": 75.9,
+     "tested_rank_label": "1="
+    },
+    {
+     "index": 71.5,
+     "index_change": -0.43,
+     "name": "Target",
+     "rank_label": "4",
+     "tested_index": 71.0,
+     "tested_rank_label": "4"
+    },
+    {
+     "index": 63.4,
+     "index_change": 0.2,
+     "name": "Costco",
+     "rank_label": "5=",
+     "tested_index": 63.6,
+     "tested_rank_label": "5="
+    },
+    {
+     "index": 60.9,
+     "index_change": -0.6,
+     "name": "Home Depot",
+     "rank_label": "5=",
+     "tested_index": 60.3,
+     "tested_rank_label": "5="
+    },
+    {
+     "index": 51.7,
+     "index_change": -0.35,
+     "name": "Ashley Furniture",
+     "rank_label": "7=",
+     "tested_index": 51.3,
+     "tested_rank_label": "7="
+    },
+    {
+     "index": 49.5,
+     "index_change": -0.77,
+     "name": "Old Navy",
+     "rank_label": "7=",
+     "tested_index": 48.8,
+     "tested_rank_label": "7="
+    },
+    {
+     "index": 47.1,
+     "index_change": -0.81,
+     "name": "GameStop",
+     "rank_label": "7=",
+     "tested_index": 46.3,
+     "tested_rank_label": "7="
+    },
+    {
+     "index": 44.2,
+     "index_change": -0.85,
+     "name": "IKEA",
+     "rank_label": "10=",
+     "tested_index": 43.3,
+     "tested_rank_label": "10="
+    }
+   ],
+   "signal": "rdy.social",
+   "tested_weight": 4.5,
+   "unpublished_brands_entering_public_rows": 0,
+   "weight": 6
+  },
+  {
+   "factor": 1.25,
+   "largest_index_change": 0.84,
+   "leaders_changed": false,
+   "order_changed": true,
+   "ranks_changed": 0,
+   "rows": [
+    {
+     "index": 87.3,
+     "index_change": 0.19,
+     "name": "Walmart",
+     "rank_label": "1=",
+     "tested_index": 87.4,
+     "tested_rank_label": "1="
+    },
+    {
+     "index": 80.9,
+     "index_change": 0.28,
+     "name": "Best Buy",
+     "rank_label": "1=",
+     "tested_index": 81.2,
+     "tested_rank_label": "1="
+    },
+    {
+     "index": 75.9,
+     "index_change": -0.01,
+     "name": "Amazon",
+     "rank_label": "1=",
+     "tested_index": 75.9,
+     "tested_rank_label": "1="
+    },
+    {
+     "index": 71.5,
+     "index_change": 0.42,
+     "name": "Target",
+     "rank_label": "4",
+     "tested_index": 71.9,
+     "tested_rank_label": "4"
+    },
+    {
+     "index": 63.4,
+     "index_change": -0.2,
+     "name": "Costco",
+     "rank_label": "5=",
+     "tested_index": 63.2,
+     "tested_rank_label": "5="
+    },
+    {
+     "index": 60.9,
+     "index_change": 0.58,
+     "name": "Home Depot",
+     "rank_label": "5=",
+     "tested_index": 61.5,
+     "tested_rank_label": "5="
+    },
+    {
+     "index": 51.7,
+     "index_change": 0.34,
+     "name": "Ashley Furniture",
+     "rank_label": "7=",
+     "tested_index": 52.0,
+     "tested_rank_label": "7="
+    },
+    {
+     "index": 49.5,
+     "index_change": 0.75,
+     "name": "Old Navy",
+     "rank_label": "7=",
+     "tested_index": 50.3,
+     "tested_rank_label": "7="
+    },
+    {
+     "index": 47.1,
+     "index_change": 0.78,
+     "name": "GameStop",
+     "rank_label": "7=",
+     "tested_index": 47.9,
+     "tested_rank_label": "7="
+    },
+    {
+     "index": 44.2,
+     "index_change": 0.82,
+     "name": "IKEA",
+     "rank_label": "10=",
+     "tested_index": 45.0,
+     "tested_rank_label": "10="
+    }
+   ],
+   "signal": "rdy.social",
+   "tested_weight": 7.5,
+   "unpublished_brands_entering_public_rows": 0,
+   "weight": 6
+  },
+  {
+   "factor": 0.75,
+   "largest_index_change": 0.59,
+   "leaders_changed": false,
+   "order_changed": false,
+   "ranks_changed": 0,
+   "rows": [
+    {
+     "index": 87.3,
+     "index_change": -0.13,
+     "name": "Walmart",
+     "rank_label": "1=",
+     "tested_index": 87.1,
+     "tested_rank_label": "1="
+    },
+    {
+     "index": 80.9,
+     "index_change": -0.19,
+     "name": "Best Buy",
+     "rank_label": "1=",
+     "tested_index": 80.7,
+     "tested_rank_label": "1="
+    },
+    {
+     "index": 75.9,
+     "index_change": 0.0,
+     "name": "Amazon",
+     "rank_label": "1=",
+     "tested_index": 75.9,
+     "tested_rank_label": "1="
+    },
+    {
+     "index": 71.5,
+     "index_change": -0.29,
+     "name": "Target",
+     "rank_label": "4",
+     "tested_index": 71.2,
+     "tested_rank_label": "4"
+    },
+    {
+     "index": 63.4,
+     "index_change": -0.37,
+     "name": "Costco",
+     "rank_label": "5=",
+     "tested_index": 63.1,
+     "tested_rank_label": "5="
+    },
+    {
+     "index": 60.9,
+     "index_change": -0.4,
+     "name": "Home Depot",
+     "rank_label": "5=",
+     "tested_index": 60.5,
+     "tested_rank_label": "5="
+    },
+    {
+     "index": 51.7,
+     "index_change": -0.49,
+     "name": "Ashley Furniture",
+     "rank_label": "7=",
+     "tested_index": 51.2,
+     "tested_rank_label": "7="
+    },
+    {
+     "index": 49.5,
+     "index_change": -0.51,
+     "name": "Old Navy",
+     "rank_label": "7=",
+     "tested_index": 49.0,
+     "tested_rank_label": "7="
+    },
+    {
+     "index": 47.1,
+     "index_change": -0.53,
+     "name": "GameStop",
+     "rank_label": "7=",
+     "tested_index": 46.5,
+     "tested_rank_label": "7="
+    },
+    {
+     "index": 44.2,
+     "index_change": -0.56,
+     "name": "IKEA",
+     "rank_label": "10=",
+     "tested_index": 43.6,
+     "tested_rank_label": "10="
+    }
+   ],
+   "signal": "rdy.local_listings",
+   "tested_weight": 3.0,
+   "unpublished_brands_entering_public_rows": 0,
+   "weight": 4
+  },
+  {
+   "factor": 1.25,
+   "largest_index_change": 0.58,
+   "leaders_changed": false,
+   "order_changed": false,
+   "ranks_changed": 0,
+   "rows": [
+    {
+     "index": 87.3,
+     "index_change": 0.13,
+     "name": "Walmart",
+     "rank_label": "1=",
+     "tested_index": 87.4,
+     "tested_rank_label": "1="
+    },
+    {
+     "index": 80.9,
+     "index_change": 0.19,
+     "name": "Best Buy",
+     "rank_label": "1=",
+     "tested_index": 81.1,
+     "tested_rank_label": "1="
+    },
+    {
+     "index": 75.9,
+     "index_change": 0.0,
+     "name": "Amazon",
+     "rank_label": "1=",
+     "tested_index": 75.9,
+     "tested_rank_label": "1="
+    },
+    {
+     "index": 71.5,
+     "index_change": 0.28,
+     "name": "Target",
+     "rank_label": "4",
+     "tested_index": 71.7,
+     "tested_rank_label": "4"
+    },
+    {
+     "index": 63.4,
+     "index_change": 0.36,
+     "name": "Costco",
+     "rank_label": "5=",
+     "tested_index": 63.8,
+     "tested_rank_label": "5="
+    },
+    {
+     "index": 60.9,
+     "index_change": 0.39,
+     "name": "Home Depot",
+     "rank_label": "5=",
+     "tested_index": 61.3,
+     "tested_rank_label": "5="
+    },
+    {
+     "index": 51.7,
+     "index_change": 0.48,
+     "name": "Ashley Furniture",
+     "rank_label": "7=",
+     "tested_index": 52.2,
+     "tested_rank_label": "7="
+    },
+    {
+     "index": 49.5,
+     "index_change": 0.5,
+     "name": "Old Navy",
+     "rank_label": "7=",
+     "tested_index": 50.0,
+     "tested_rank_label": "7="
+    },
+    {
+     "index": 47.1,
+     "index_change": 0.52,
+     "name": "GameStop",
+     "rank_label": "7=",
+     "tested_index": 47.6,
+     "tested_rank_label": "7="
+    },
+    {
+     "index": 44.2,
+     "index_change": 0.55,
+     "name": "IKEA",
+     "rank_label": "10=",
+     "tested_index": 44.7,
+     "tested_rank_label": "10="
+    }
+   ],
+   "signal": "rdy.local_listings",
+   "tested_weight": 5.0,
+   "unpublished_brands_entering_public_rows": 0,
+   "weight": 4
+  },
+  {
+   "factor": 0.75,
+   "largest_index_change": 0.41,
+   "leaders_changed": false,
+   "order_changed": false,
+   "ranks_changed": 0,
+   "rows": [
+    {
+     "index": 87.3,
+     "index_change": 0.2,
+     "name": "Walmart",
+     "rank_label": "1=",
+     "tested_index": 87.5,
+     "tested_rank_label": "1="
+    },
+    {
+     "index": 80.9,
+     "index_change": 0.41,
+     "name": "Best Buy",
+     "rank_label": "1=",
+     "tested_index": 81.3,
+     "tested_rank_label": "1="
+    },
+    {
+     "index": 75.9,
+     "index_change": 0.4,
+     "name": "Amazon",
+     "rank_label": "1=",
+     "tested_index": 76.3,
+     "tested_rank_label": "1="
+    },
+    {
+     "index": 71.5,
+     "index_change": 0.15,
+     "name": "Target",
+     "rank_label": "4",
+     "tested_index": 71.6,
+     "tested_rank_label": "4"
+    },
+    {
+     "index": 63.4,
+     "index_change": 0.29,
+     "name": "Costco",
+     "rank_label": "5=",
+     "tested_index": 63.7,
+     "tested_rank_label": "5="
+    },
+    {
+     "index": 60.9,
+     "index_change": 0.02,
+     "name": "Home Depot",
+     "rank_label": "5=",
+     "tested_index": 60.9,
+     "tested_rank_label": "5="
+    },
+    {
+     "index": 51.7,
+     "index_change": 0.1,
+     "name": "Ashley Furniture",
+     "rank_label": "7=",
+     "tested_index": 51.8,
+     "tested_rank_label": "7="
+    },
+    {
+     "index": 49.5,
+     "index_change": -0.25,
+     "name": "Old Navy",
+     "rank_label": "7=",
+     "tested_index": 49.3,
+     "tested_rank_label": "7="
+    },
+    {
+     "index": 47.1,
+     "index_change": -0.22,
+     "name": "GameStop",
+     "rank_label": "7=",
+     "tested_index": 46.9,
+     "tested_rank_label": "7="
+    },
+    {
+     "index": 44.2,
+     "index_change": -0.1,
+     "name": "IKEA",
+     "rank_label": "10=",
+     "tested_index": 44.1,
+     "tested_rank_label": "10="
+    }
+   ],
+   "signal": "rdy.structured_data",
+   "tested_weight": 1.5,
+   "unpublished_brands_entering_public_rows": 0,
+   "weight": 2
+  },
+  {
+   "factor": 1.25,
+   "largest_index_change": 0.4,
+   "leaders_changed": false,
+   "order_changed": false,
+   "ranks_changed": 0,
+   "rows": [
+    {
+     "index": 87.3,
+     "index_change": -0.2,
+     "name": "Walmart",
+     "rank_label": "1=",
+     "tested_index": 87.1,
+     "tested_rank_label": "1="
+    },
+    {
+     "index": 80.9,
+     "index_change": -0.4,
+     "name": "Best Buy",
+     "rank_label": "1=",
+     "tested_index": 80.5,
+     "tested_rank_label": "1="
+    },
+    {
+     "index": 75.9,
+     "index_change": -0.39,
+     "name": "Amazon",
+     "rank_label": "1=",
+     "tested_index": 75.5,
+     "tested_rank_label": "1="
+    },
+    {
+     "index": 71.5,
+     "index_change": -0.15,
+     "name": "Target",
+     "rank_label": "4",
+     "tested_index": 71.3,
+     "tested_rank_label": "4"
+    },
+    {
+     "index": 63.4,
+     "index_change": -0.29,
+     "name": "Costco",
+     "rank_label": "5=",
+     "tested_index": 63.2,
+     "tested_rank_label": "5="
+    },
+    {
+     "index": 60.9,
+     "index_change": -0.02,
+     "name": "Home Depot",
+     "rank_label": "5=",
+     "tested_index": 60.9,
+     "tested_rank_label": "5="
+    },
+    {
+     "index": 51.7,
+     "index_change": -0.1,
+     "name": "Ashley Furniture",
+     "rank_label": "7=",
+     "tested_index": 51.6,
+     "tested_rank_label": "7="
+    },
+    {
+     "index": 49.5,
+     "index_change": 0.25,
+     "name": "Old Navy",
+     "rank_label": "7=",
+     "tested_index": 49.8,
+     "tested_rank_label": "7="
+    },
+    {
+     "index": 47.1,
+     "index_change": 0.21,
+     "name": "GameStop",
+     "rank_label": "7=",
+     "tested_index": 47.3,
+     "tested_rank_label": "7="
+    },
+    {
+     "index": 44.2,
+     "index_change": 0.1,
+     "name": "IKEA",
+     "rank_label": "10=",
+     "tested_index": 44.3,
+     "tested_rank_label": "10="
+    }
+   ],
+   "signal": "rdy.structured_data",
+   "tested_weight": 2.5,
+   "unpublished_brands_entering_public_rows": 0,
+   "weight": 2
+  }
+ ]
+}

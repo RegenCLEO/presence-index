@@ -1,0 +1,100 @@
+# CLEO Presence Index 1.0.0: weights, curves and thresholds.
+# Generated from calculator/reference.py. calculator/tests/test_config.py fails if the two differ.
+version: "1.0.0"
+
+signals:
+  rec.ai_recommendation:
+    layer: recognition
+    surface: ai_search
+    weight: 24
+  rec.organic_search:
+    layer: recognition
+    surface: search
+    weight: 14
+  rec.reviews:
+    layer: recognition
+    surface: reviews
+    weight: 12
+  rec.ai_citation:
+    layer: recognition
+    surface: ai_search
+    weight: 10
+  rec.independent_mentions:
+    layer: recognition
+    surface: social
+    weight: 10
+  rdy.crawl_access:
+    layer: readiness
+    surface: website
+    weight: 9
+  rdy.site_seo:
+    layer: readiness
+    surface: website
+    weight: 9
+  rdy.social:
+    layer: readiness
+    surface: social
+    weight: 6
+  rdy.local_listings:
+    layer: readiness
+    surface: maps
+    weight: 4
+  rdy.structured_data:
+    layer: readiness
+    surface: website
+    weight: 2
+
+# Log-normal curves: x50 scores 50, x90 scores 90. v1.0 defaults, calibrated at a later release.
+curves:
+  rec.ai_recommendation: {x50: 0.15, x90: 0.5}
+  rec.ai_citation: {x50: 0.05, x90: 0.25}
+  rec.organic_search: {x50: 0.05, x90: 0.25}
+  rec.independent_mentions: {x50: 10.0, x90: 60.0}
+  rec.reviews.volume: {x50: 50.0, x90: 400.0}
+
+engine_weights:
+  chatgpt: 0.41
+  google_ai: 0.25
+  gemini: 0.21
+  claude: 0.08
+  perplexity: 0.05
+
+answer_agents:
+  chatgpt: [OAI-SearchBot, ChatGPT-User]
+  google_ai: [Googlebot]
+  gemini: [Googlebot]
+  claude: [Claude-SearchBot, Claude-User]
+  perplexity: [PerplexityBot, Perplexity-User]
+
+# Advanced Web Ranking CTR study, unbranded queries, Google US, all devices, July 2026, per cent.
+ctr_awr_unbranded_2026_07:
+  1: 19.38
+  2: 9.64
+  3: 6.02
+  4: 3.88
+  5: 2.68
+  6: 1.86
+  7: 1.37
+  8: 1.1
+  9: 0.94
+  10: 0.81
+
+mention_tiers:
+  A: 3.0
+  B: 1.5
+  C: 0.5
+  community: 1.0
+
+coverage:
+  rated: 0.80
+  provisional: 0.50
+
+bands:
+  - {min: 85, name: Leading}
+  - {min: 65, name: Strong}
+  - {min: 40, name: Building}
+  - {min: 0, name: Weak}
+
+grade_hysteresis:
+  points: 1.5
+  hold_days: 7

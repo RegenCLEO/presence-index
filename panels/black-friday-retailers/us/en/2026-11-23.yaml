@@ -1,0 +1,239 @@
+# Drop 1 of the CLEO Presence Index public scan. Frozen on 21 November 2026.
+# Claude (Fable 5.2) drafted the questions and the keyword candidates on 21 November 2026.
+# The operator ordered the run the same day. No named person has read the panel line by
+# line yet. Write the approver's name and the date here once one has.
+#
+# Which businesses count, written before the scan ran. A business the answers name counts
+# as a Black Friday retailer when a shopper in the United States can buy products from it
+# directly, in a store or on its own website. A marketplace
+# counts as one business. A store brand or a sub-brand counts under its parent's retail
+# name. These do not count: deal, coupon and price comparison sites, news and review
+# sites, payment and delivery services, grocery, pharmacy and convenience chains, and
+# phone carriers.
+# Changed at 12:36 UTC on the scan day, while the answers were being collected and before
+# any had been read: a maker whose products other retailers sell does not count, even
+# when it runs its own store. The answer reader cannot tell a maker named as a store from
+# a maker named for its products, so its rate would be inflated. A chain that sells
+# mainly its own label in its own stores counts.
+panel_id: black-friday-retailers-us-en-2026-11
+protocol: PS-1.0
+category: Black Friday retailers
+market: {country: US, language: en}
+
+# The scan day is Saturday 21 November 2026. Monday 23 November is the reserve day and
+# the second keyword pull, which falls in the next calendar week.
+days: ["2026-11-21", "2026-11-23"]
+runs_per_day: 2
+keyword_pulls: ["2026-11-21", "2026-11-23"]
+
+# No brand list. The scan ranks the 25 businesses the answers name most often.
+# A person confirms each one's domain in additions.yaml after the first parse.
+selection:
+  mode: ai_top
+  ai_named_max: 25
+
+# The engines are asked the way CLEO's product asks them, as its code stood on
+# 21 November 2026: ChatGPT through a data provider's scraper of chatgpt.com, Claude
+# Sonnet 5.5 with the basic web search tool and four searches at most, and Gemini 3.5
+# Flash on Vertex AI. Unlike the product, the scan sends no system prompt.
+engines:
+  chatgpt: {adapter: chatgpt_scraper}
+  google_ai: {}
+  claude: {model: "claude-sonnet-5-5", max_searches: 4, web_search_tool: web_search_20250305}
+  gemini: {model: "gemini-3.5-flash", route: vertex}
+
+# The product has no answer readers, so these three are this scan's own choice.
+reader:
+  first: {provider: anthropic, model: "claude-haiku-5-5"}
+  second: {provider: gemini, model: "gemini-3.5-flash"}
+  tiebreak: {provider: anthropic, model: "claude-sonnet-5-5"}
+
+# 60 questions: 12 general and six for each of eight product groups.
+# Rule: no retailer name and no product brand name in any question.
+# Each product group has the same six kinds of question: best place to buy, best deals,
+# best website, lowest price, a service question and a narrower product question.
+questions:
+  # general
+  - {id: g01, stratum: general, text: "Which stores have the best Black Friday deals this year?"}
+  - {id: g02, stratum: general, text: "Where should I shop on Black Friday to save the most money?"}
+  - {id: g03, stratum: general, text: "Which online retailers have the best Black Friday sales?"}
+  - {id: g04, stratum: general, text: "Which stores start their Black Friday deals early?"}
+  - {id: g05, stratum: general, text: "Which stores are worth visiting in person on Black Friday for doorbuster deals?"}
+  - {id: g06, stratum: general, text: "Which retailers offer free shipping on Black Friday orders?"}
+  - {id: g07, stratum: general, text: "Which stores will match a competitor's Black Friday price?"}
+  - {id: g08, stratum: general, text: "Which retailers have the best return policy for Black Friday purchases?"}
+  - {id: g09, stratum: general, text: "Which stores let me order online and pick up in store on Black Friday?"}
+  - {id: g10, stratum: general, text: "Where can I find the best Black Friday deals on holiday gifts?"}
+  - {id: g11, stratum: general, text: "Which retailers can I trust to have real Black Friday discounts?"}
+  - {id: g12, stratum: general, text: "Which stores have the best Black Friday deals for shoppers on a tight budget?"}
+
+  # tvs
+  - {id: tv01, stratum: tvs, text: "Where is the best place to buy a TV on Black Friday?"}
+  - {id: tv02, stratum: tvs, text: "Which stores have the best Black Friday TV deals?"}
+  - {id: tv03, stratum: tvs, text: "What is the best website to buy a TV online on Black Friday?"}
+  - {id: tv04, stratum: tvs, text: "Which retailer has the lowest Black Friday prices on 65 inch TVs?"}
+  - {id: tv05, stratum: tvs, text: "Which stores offer free delivery and wall mounting with a Black Friday TV purchase?"}
+  - {id: tv06, stratum: tvs, text: "Where can I find the best Black Friday deals on OLED TVs?"}
+
+  # laptops
+  - {id: lap01, stratum: laptops, text: "Where is the best place to buy a laptop on Black Friday?"}
+  - {id: lap02, stratum: laptops, text: "Which stores have the best Black Friday laptop deals?"}
+  - {id: lap03, stratum: laptops, text: "What is the best website to buy a laptop online on Black Friday?"}
+  - {id: lap04, stratum: laptops, text: "Which retailer has the lowest Black Friday prices on gaming laptops?"}
+  - {id: lap05, stratum: laptops, text: "Which stores have the best Black Friday laptop deals for college students?"}
+  - {id: lap06, stratum: laptops, text: "Where can I buy a laptop for under 500 dollars on Black Friday?"}
+
+  # phones
+  - {id: ph01, stratum: phones, text: "Where is the best place to buy a smartphone on Black Friday?"}
+  - {id: ph02, stratum: phones, text: "Which stores have the best Black Friday deals on unlocked phones?"}
+  - {id: ph03, stratum: phones, text: "What is the best website to buy a phone online on Black Friday?"}
+  - {id: ph04, stratum: phones, text: "Which retailer has the lowest Black Friday prices on smartphones?"}
+  - {id: ph05, stratum: phones, text: "Which stores give the best trade-in offers on phones during Black Friday?"}
+  - {id: ph06, stratum: phones, text: "Where can I find the best Black Friday deals on wireless earbuds?"}
+
+  # kitchen appliances
+  - {id: kit01, stratum: kitchen appliances, text: "Where is the best place to buy kitchen appliances on Black Friday?"}
+  - {id: kit02, stratum: kitchen appliances, text: "Which stores have the best Black Friday deals on small kitchen appliances?"}
+  - {id: kit03, stratum: kitchen appliances, text: "What is the best website to buy kitchen appliances online on Black Friday?"}
+  - {id: kit04, stratum: kitchen appliances, text: "Which retailer has the lowest Black Friday prices on refrigerators and dishwashers?"}
+  - {id: kit05, stratum: kitchen appliances, text: "Which stores offer free delivery and installation on Black Friday appliance purchases?"}
+  - {id: kit06, stratum: kitchen appliances, text: "Where can I find the best Black Friday deals on air fryers and stand mixers?"}
+
+  # toys
+  - {id: toy01, stratum: toys, text: "Where is the best place to buy toys on Black Friday?"}
+  - {id: toy02, stratum: toys, text: "Which stores have the best Black Friday toy deals?"}
+  - {id: toy03, stratum: toys, text: "What is the best website to buy toys online on Black Friday?"}
+  - {id: toy04, stratum: toys, text: "Which retailer has the lowest Black Friday prices on kids' toys?"}
+  - {id: toy05, stratum: toys, text: "Which stores have this year's most popular toys in stock on Black Friday?"}
+  - {id: toy06, stratum: toys, text: "Where can I find the best Black Friday deals on building sets and board games?"}
+
+  # clothing
+  - {id: clo01, stratum: clothing, text: "Where is the best place to buy clothes on Black Friday?"}
+  - {id: clo02, stratum: clothing, text: "Which stores have the best Black Friday clothing deals?"}
+  - {id: clo03, stratum: clothing, text: "What is the best website to buy clothes online on Black Friday?"}
+  - {id: clo04, stratum: clothing, text: "Which retailer has the lowest Black Friday prices on winter coats and jackets?"}
+  - {id: clo05, stratum: clothing, text: "Which clothing stores offer free returns on Black Friday orders?"}
+  - {id: clo06, stratum: clothing, text: "Where can I find the best Black Friday deals on shoes and sneakers?"}
+
+  # furniture
+  - {id: fur01, stratum: furniture, text: "Where is the best place to buy furniture on Black Friday?"}
+  - {id: fur02, stratum: furniture, text: "Which stores have the best Black Friday furniture deals?"}
+  - {id: fur03, stratum: furniture, text: "What is the best website to buy furniture online on Black Friday?"}
+  - {id: fur04, stratum: furniture, text: "Which retailer has the lowest Black Friday prices on sofas and sectionals?"}
+  - {id: fur05, stratum: furniture, text: "Which furniture stores offer free delivery on Black Friday orders?"}
+  - {id: fur06, stratum: furniture, text: "Where can I find the best Black Friday deals on mattresses?"}
+
+  # video games
+  - {id: vg01, stratum: video games, text: "Where is the best place to buy a game console on Black Friday?"}
+  - {id: vg02, stratum: video games, text: "Which stores have the best Black Friday video game deals?"}
+  - {id: vg03, stratum: video games, text: "What is the best website to buy video games online on Black Friday?"}
+  - {id: vg04, stratum: video games, text: "Which retailer has the lowest Black Friday prices on game consoles?"}
+  - {id: vg05, stratum: video games, text: "Which stores have the best Black Friday console bundles?"}
+  - {id: vg06, stratum: video games, text: "Where can I find the best Black Friday deals on gaming headsets and controllers?"}
+
+keywords:
+  # Written by `python -m scan volumes`. The 100 candidates with the highest monthly
+  # search volume in US, from Google Ads through a data provider, looked up on 2026-11-21.
+  # Ties sort by keyword text. Left out before the cut:
+  # keywords with the word 'cyber', and a keyword that differs from a kept one only by a plural or by word order.
+  - {text: "black friday deals", volume: 673000}
+  - {text: "black friday sale", volume: 90500}
+  - {text: "best black friday deals", volume: 74000}
+  - {text: "black friday 2026", volume: 74000}
+  - {text: "black friday ads", volume: 49500}
+  - {text: "black friday tv deals", volume: 49500}
+  - {text: "black friday deals 2026", volume: 18100}
+  - {text: "black friday appliance deals", volume: 14800}
+  - {text: "black friday kitchen appliance deals", volume: 14800}
+  - {text: "black friday furniture deals", volume: 12100}
+  - {text: "black friday furniture sale", volume: 12100}
+  - {text: "best black friday tv deals", volume: 9900}
+  - {text: "black friday clothing deals", volume: 9900}
+  - {text: "when does black friday start", volume: 9900}
+  - {text: "black friday electronics deals", volume: 8100}
+  - {text: "black friday gaming pc deals", volume: 8100}
+  - {text: "black friday laptop deals", volume: 8100}
+  - {text: "black friday pc game deals", volume: 8100}
+  - {text: "best black friday sales", volume: 6600}
+  - {text: "black friday phone deals", volume: 6600}
+  - {text: "black friday deals near me", volume: 5400}
+  - {text: "black friday refrigerator deals", volume: 5400}
+  - {text: "black friday shoe deals", volume: 5400}
+  - {text: "black friday tv sale", volume: 5400}
+  - {text: "best black friday laptop deals", volume: 4400}
+  - {text: "black friday clothing sales", volume: 4400}
+  - {text: "black friday couch deals", volume: 4400}
+  - {text: "black friday gaming deals", volume: 4400}
+  - {text: "black friday sofa deals", volume: 4400}
+  - {text: "black friday washer and dryer deals", volume: 4400}
+  - {text: "black friday cell phone deals", volume: 3600}
+  - {text: "black friday gaming laptop deals", volume: 3600}
+  - {text: "black friday mattress deals", volume: 3600}
+  - {text: "black friday store hours", volume: 3600}
+  - {text: "black friday tablet deals", volume: 3600}
+  - {text: "early black friday deals", volume: 3600}
+  - {text: "black friday 75 inch tv deals", volume: 2900}
+  - {text: "black friday air fryer deals", volume: 2900}
+  - {text: "black friday computer deals", volume: 2900}
+  - {text: "black friday doorbusters", volume: 2900}
+  - {text: "black friday monitor deals", volume: 2900}
+  - {text: "black friday 65 inch tv deals", volume: 2400}
+  - {text: "black friday dishwasher deals", volume: 2400}
+  - {text: "black friday jewelry deals", volume: 2400}
+  - {text: "black friday microwave deals", volume: 2400}
+  - {text: "black friday smart tv deals", volume: 2400}
+  - {text: "black friday vacuum deals", volume: 2400}
+  - {text: "black friday video game deals", volume: 2400}
+  - {text: "black friday coffee maker deals", volume: 1900}
+  - {text: "black friday printer deals", volume: 1900}
+  - {text: "black friday toy deals", volume: 1900}
+  - {text: "black friday 55 inch tv deals", volume: 1600}
+  - {text: "black friday desktop computer deals", volume: 1600}
+  - {text: "black friday headphone deals", volume: 1600}
+  - {text: "black friday soundbar deals", volume: 1600}
+  - {text: "black friday unlocked phone deals", volume: 1600}
+  - {text: "stores open on black friday", volume: 1600}
+  - {text: "black friday cookware deals", volume: 1300}
+  - {text: "black friday oled tv deals", volume: 1300}
+  - {text: "black friday robot vacuum deals", volume: 1300}
+  - {text: "black friday deals online", volume: 1000}
+  - {text: "black friday electric scooter deals", volume: 1000}
+  - {text: "black friday gaming monitor deals", volume: 1000}
+  - {text: "black friday handbag deals", volume: 1000}
+  - {text: "black friday laptop sale", volume: 1000}
+  - {text: "black friday recliner deals", volume: 1000}
+  - {text: "black friday tech deals", volume: 1000}
+  - {text: "best black friday phone deals", volume: 880}
+  - {text: "black friday board game deals", volume: 880}
+  - {text: "black friday espresso machine deals", volume: 880}
+  - {text: "black friday sectional deals", volume: 880}
+  - {text: "black friday smartwatch deals", volume: 880}
+  - {text: "black friday 50 inch tv deals", volume: 720}
+  - {text: "black friday blender deals", volume: 720}
+  - {text: "black friday game console deals", volume: 720}
+  - {text: "black friday office chair deals", volume: 720}
+  - {text: "best black friday toy deals", volume: 590}
+  - {text: "black friday boot deals", volume: 590}
+  - {text: "black friday gaming chair deals", volume: 590}
+  - {text: "black friday rug deals", volume: 590}
+  - {text: "black friday toy sale", volume: 590}
+  - {text: "black friday bed frame deals", volume: 480}
+  - {text: "black friday patio furniture deals", volume: 480}
+  - {text: "black friday sneaker deals", volume: 480}
+  - {text: "black friday 4k tv deals", volume: 390}
+  - {text: "black friday dining table deals", volume: 390}
+  - {text: "black friday smartphone deals", volume: 390}
+  - {text: "black friday stand mixer deals", volume: 390}
+  - {text: "black friday toaster oven deals", volume: 390}
+  - {text: "black friday 85 inch tv deals", volume: 320}
+  - {text: "black friday bluetooth speaker deals", volume: 320}
+  - {text: "black friday gaming headset deals", volume: 320}
+  - {text: "black friday jacket deals", volume: 320}
+  - {text: "black friday student laptop deals", volume: 320}
+  - {text: "black friday vr headset deals", volume: 320}
+  - {text: "cheap tv black friday", volume: 320}
+  - {text: "black friday desk deals", volume: 260}
+  - {text: "black friday pajama deals", volume: 260}
+  - {text: "black friday prepaid phone deals", volume: 260}
+  - {text: "black friday weekend sales", volume: 260}
+sha256: 65c693fb9482a751ec03c683cd85abf080967bc7b3c1a87545849371e462a0ec

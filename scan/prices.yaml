@@ -1,0 +1,26 @@
+# Unit prices for vendors that return usage and no cost. DataForSEO returns a cost per
+# task, so it has no entry here. A model with no entry is logged as "unpriced" and the
+# cost log says how many calls that covers; nothing is guessed.
+#
+# Keys under usd_per_unit must match the keys of the usage an adapter returns.
+# Add or correct an entry from the vendor's price page before a full run, with its date.
+prices:
+  anthropic:
+    claude-sonnet-5-5:
+      as_of: "2026-11-03"
+      source: Anthropic model price table, USD 2 and 10 per million tokens
+      usd_per_unit:
+        input_tokens: 0.000002
+        output_tokens: 0.00001
+        cache_read_input_tokens: 0.0000001
+        cache_creation_input_tokens: 0.0000025
+        # Unverified: confirm the web search price before relying on Claude cost rows.
+        web_search_requests: 0.01
+    claude-haiku-5-5:
+      as_of: "2026-11-03"
+      source: Anthropic model price table, USD 0.10 and 0.50 per million tokens
+      usd_per_unit:
+        input_tokens: 0.0000001
+        output_tokens: 0.0000005
+  openai: {}
+  google: {}
